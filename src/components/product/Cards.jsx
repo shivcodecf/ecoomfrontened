@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../css/Product.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -43,7 +43,14 @@ const AddItem = (item) =>{
         })
     }
     
-}
+}   
+  
+
+// fixed  
+
+
+
+
 
 
 
@@ -61,7 +68,11 @@ const AddItem = (item) =>{
       <p>{desc}</p>
       <div className="add-cart">
       <p className='product-price'>&#x20B9;{price}</p>
-      <AddShoppingCartIcon onClick ={()=>AddItem(item)} style={{cursor:"pointer",border:"none", color:"#84dcc6",marginRight:"15px"}}/> 
+      <AddShoppingCartIcon onClick ={()=>AddItem(item)} style={{cursor:"pointer",border:"none", color:"#84dcc6",marginRight:"15px"}} 
+      
+     
+      
+      /> 
     
 
       </div>

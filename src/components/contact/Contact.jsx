@@ -16,7 +16,7 @@ import '../../css/Contact.css'
 const Contact = () => {
   return (
     <> 
-     <p className='contact-heading'>Contact</p>
+     <p className='contact-heading'></p>
     <div className="contact-container">
    
     <div className="contact-left">

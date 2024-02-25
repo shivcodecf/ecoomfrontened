@@ -1,13 +1,18 @@
 import React from 'react'
-import Cards from './Cards';
+import Cards from './Cards'; 
+import { NavLink } from 'react-router-dom';
 
 import { useState,useEffect } from 'react'
 import '../../css/Product.css'
 import DeleteIcon from '@mui/icons-material/Delete';
-import ClearIcon from '@mui/icons-material/Clear';
+import ClearIcon from '@mui/icons-material/Clear'; 
+import { MoveLeft } from 'lucide-react'; 
 
-const Cart = ({cart,setCart,AddItemPrice}) => {
-    const[price,setPrice]=useState("");
+
+const Cart = ({cart,setCart,AddItemPrice,show,flag,setShow}) => {   
+    const[price,setPrice]=useState(""); 
+
+   
 
 
     const handlePrice = () => {
@@ -26,6 +31,9 @@ const Cart = ({cart,setCart,AddItemPrice}) => {
             const arr = cart.filter((item)=>item.id!==id);
             setCart(arr);
       
+      }  
+      const backhandler=()=>{
+       setShow(flag=>flag+1);
       }
     
 
@@ -34,8 +42,22 @@ const Cart = ({cart,setCart,AddItemPrice}) => {
     
     
   return (
-    <div>
-        <div className='cart-main-title'>Cart</div>
+    <div> 
+       
+     
+    
+         <div className='back'> 
+     
+       
+        
+        <MoveLeft style={{cursor:"pointer"}} onClick={backhandler}/> 
+        
+       
+        </div>
+      
+   
+     
+        <div className='cart-main-title'></div>
          {
             cart?.map((item)=>(
                 <div className="cart_box" >

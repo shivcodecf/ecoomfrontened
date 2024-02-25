@@ -13,7 +13,9 @@ import banner from "../../images/banner.jpg"
 
 import { NavLink } from 'react-router-dom'
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
-import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
+import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded'; 
+
+import { ShoppingCart } from 'lucide-react';
 
 
 
@@ -76,7 +78,32 @@ const Product = () => {
     }
     useEffect(() => {
         Random();
-      });
+      });  
+
+
+
+
+      const [isFixed, setIsFixed] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const threshold = 350; // Adjust this value as needed
+    if (window.scrollY > threshold) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  // Clean up the event listener on unmount
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
+
    
 
 
@@ -90,9 +117,14 @@ const Product = () => {
     <div >
          
        
-        <div className='cart-top'>
-        <ShoppingBagRoundedIcon className="main-cart" onClick={()=>handler()}  style={{fontSize:"30px",cursor:"pointer"} }/>
-        <div className='main-cart-count'>{itemcount}</div>
+         <div className='cart-top'>
+        <ShoppingCart   className= {`main-cart ${isFixed ? 'fixed' : ''}`}  onClick={()=>handler()}  style={{fontSize:"30px",cursor:"pointer"} }
+        
+       
+        
+        
+        />
+        <div className={`main-cart-count ${isFixed ? 'fixed' : ''}`}  >{itemcount}</div>
        </div>
        
        
@@ -126,7 +158,7 @@ const Product = () => {
     
       <div className="cart_box" >
        
-      <Cart cart={cart} setCart={setCart} AddItemPrice={AddItemPrice} />
+      <Cart cart={cart} setCart={setCart} AddItemPrice={AddItemPrice} show={show} flag={flag} setShow={setShow}/>
       </div>
       
       } 

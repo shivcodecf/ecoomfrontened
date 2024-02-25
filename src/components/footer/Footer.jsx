@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content footer-content1">
                 <h3>Contact Us</h3>
                 <p>Email:shopEasy@example.com</p>
                 <p>Phone:+918601028673</p>
@@ -26,7 +26,7 @@ const Footer = () => {
                  </ul>
             </div>
             <div class="footer-content">
-                <h3>Follow Us</h3>
+                <h3 className='followh3'>Follow Us</h3>
                 <ul class="social-icons">
                  <li><a href=""><InstagramIcon/></a></li>
                  <li><a href=""><TwitterIcon /></a></li>

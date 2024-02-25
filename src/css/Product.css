@@ -44,6 +44,7 @@
 }
 .product-price{
     color:#3a7ca5;
+    margin-top:4px;
 }
 .product-cards:hover {
     /* box-shadow: 0 8px 16px 0 #eeeee4; */
@@ -151,7 +152,7 @@ a{
     align-items: center;
     justify-content: flex-start;
     
-    margin-top: 40px;
+    margin-top: 70px;
     height:auto;
     width:100%;
    
@@ -267,6 +268,7 @@ a{
     position: fixed;
     margin-top: 5px;
     margin-right:-4px;
+    border-radius:80%;
     
 
 }
@@ -325,12 +327,17 @@ a{
   }
   .jacket-title{
     text-align: center;
-  }
+  }  
+  
 
   /* media queries */
   @media screen and (max-width:991px)
     {
-        
+         
+        .main-cart{
+            padding:5px;
+           
+        }
         
         .cart-top{
             /* justify-content: center;
@@ -343,12 +350,19 @@ a{
            
            
             text-align: center;
+            width:4%;
             /* margin-top: 200px; */
             /* margin-right:-100px; */
            
             
         
-        }
+        } 
+        .fixed {
+            position: fixed;
+            top: 0;
+            width: 4%;
+            /* Additional styles for when the element is fixed */
+          }
         .shirts-nav ul{
             
            

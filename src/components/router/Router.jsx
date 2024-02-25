@@ -10,7 +10,8 @@ import Header from '../header/Header.jsx'
 import Navbar from '../product/Navbar.jsx'
 import Jackets from '../product/Jackets.jsx'
 import Cards from '../product/Cards.jsx'
-import Footer from '../footer/Footer'
+import Footer from '../footer/Footer' 
+import Cart from '../product/Cart.jsx'
 
 const Routers = () => {
 
@@ -29,7 +30,8 @@ const Routers = () => {
       <Route path='/jackets' element = {<Jackets/>} />
       <Route path='/product' element = {< Product/>}/> 
       <Route path='/contact' element = {<Contact />}/>
-      <Route path='/login' element = {<Login />}/>
+      <Route path='/login' element = {<Login />}/> 
+       
     
       
     </Routes>

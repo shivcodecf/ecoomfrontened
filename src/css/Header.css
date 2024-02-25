@@ -65,6 +65,7 @@ header {
   }
   .nav-toggle{
     display: none;
+    position:absolute;
     
     
   }
@@ -123,19 +124,87 @@ header {
   nav .nav_:after {content: none;}
   }    */
 
-  /* media queries */
+  /* media queries */     
+  /* .humberger-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.humberger-links li {
+    margin-right: 20px;
+}
+
+.humberger-links li:last-child {
+    margin-right: 0;
+}
+
+.humberger-links li a {
+    color: #fff;
+    text-decoration: none;
+} */
+
+.hamburger-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.hamburger-links.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-links li {
+  margin-right: 20px;
+}
+
+.hamburger-links li:last-child {
+  margin-right: 0;
+}
+
+.hamburger-links li a {
+  color: #333;
+  text-decoration: none;
+}  
+
+
+
+
+
+
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-icon.open .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .line-2 {
+  opacity: 0;
+}
+
+.menu-icon.open .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+  
 
    @media screen and (max-width:991px)
     {
-        .nav-toggle{
-            display:block;
-            margin-top:-50px;
-           
-            
-        }
+        
         nav {
           display:flex;
           flex-wrap: wrap;
+          
+          color:black;
+          font-size:12px;
           margin-top:-50px;
           flex-direction: column;
 
@@ -153,11 +222,11 @@ header {
           margin-right: 20px;;
         } */
          .logo-box {
-          margin-left:22px;
+          margin-left:-5px;
           text-align: center;
         }
         .container_nav{
-          display:flex;
+           display: flex;
            gap:2px;
           flex-wrap: wrap;
          
@@ -168,10 +237,49 @@ header {
           
           
         }
+
         
         
         
         
     }
-  
+    /* @media screen and (max-width:412px)
+    {
+      nav {
+        
+        display: none;
+       
+
+      }
+      .nav-toggle{
+        display: block;
+      
+      
+        
+       
+        
+    }
+    .logo-box {
     
+     
+      margin-left: -50px;
+      margin-top:-15px;
+     
+      
+     
+      
+    }
+    .logo-box img{
+    
+     
+     
+      margin-top:5px;
+      
+      
+     
+      
+    }
+    .menu-icon {
+      display: block;
+  }
+    } */

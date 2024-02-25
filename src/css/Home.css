@@ -37,6 +37,13 @@
     height: 50px; 
     width: 200px; 
     font-size: 20px;
+} 
+.back{ 
+  margin-top:50px;
+  font-size: 50px;
+  
+  float:left;
+  cursor: pointer;
 }
 .sign-up:hover{
     background-color: #3498db;
@@ -212,6 +219,7 @@
     .container {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         background-color: #669bbc;
         color: #fff;
         padding: 20px;
@@ -229,9 +237,9 @@
       }
       
       /* Styling for the list in the footer */
-      .list {
+      /* .list {
         padding-left: 0;
-      }
+      } */
       
       .list a {
         color: #fff;
@@ -301,10 +309,13 @@
         }
         .home-logo img{
             width:100%;
-            margin-left: -8px;;
+            margin-left: -40px;;
            
            
            
+        }  
+        .Cartify{
+          margin-left:40px;
         }
         .Deals{
 
@@ -321,17 +332,35 @@
           .rupee-container{
             margin-top: 20px;
             
+          } 
+          .followh3{
+            margin-left:40px;
           }
           .container {
             flex-direction: column;
+             flex-wrap: wrap;
             align-items: center;
             text-align: center;
+            justify-content: center;
             margin:20px;
           }
         
           .footer-content {
-            max-width: 100%;
-          }
+            width: 100%;
+            float: none;
+            margin-bottom: 20px;
+            margin-left:20px;
+        }
+        .list{
+          margin-right:200px;
+        }
+        .social-icons {
+         display:flex;
+         margin-right: 155px;
+        }
+        .footer-content1{
+          margin-left: 100px;
+        }
        
         
 
