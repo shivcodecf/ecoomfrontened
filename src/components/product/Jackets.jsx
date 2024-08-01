@@ -28,7 +28,7 @@ const Jackets = () => {
         </div>
          <Navbar/>
          
-        {/* <p className='jacket-title'>Jackets</p> */}
+        {/* <p classNameName='jacket-title'>Jackets</p> */}
         <div className="card-container-shirt">
     {renderedItems}
     </div>

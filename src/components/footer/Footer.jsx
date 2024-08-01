@@ -8,26 +8,26 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <div class="container">
-            <div class="footer-content footer-content1">
+        <div className="container">
+            <div className="footer-content1">
                 <h3>Contact Us</h3>
                 <p>Email:shopEasy@example.com</p>
                 <p>Phone:+918601028673</p>
-                <p>Address:Ghaziabad Sanchi</p>
+                {/* <p>Address:Ghaziabad Sanchi</p> */}
             </div>
-            <div class="footer-content">
-                <h3 class='Cartify'>Shop Easy</h3>
-                 <ul class="list">
+            {/* <div className="footer-content">
+                <h3 className='Cartify'>Shop Easy</h3>
+                 <ul className="list">
                     <li><a href="http://localhost:3000/">Home</a></li>
                     <li><a href="http://localhost:3000/Product">Product</a></li>
                     
                     <li><a href="http://localhost:3000/Contact">Contact</a></li>
                     <li><a href="http://localhost:3000/Login">Login</a></li>
                  </ul>
-            </div>
-            <div class="footer-content">
+            </div> */}
+            <div className="footer-content">
                 <h3 className='followh3'>Follow Us</h3>
-                <ul class="social-icons">
+                <ul className="social-icons">
                  <li><a href=""><InstagramIcon/></a></li>
                  <li><a href=""><TwitterIcon /></a></li>
                  
@@ -35,7 +35,7 @@ const Footer = () => {
                 </ul>
                 </div>
         </div>
-        <div class="bottom-bar">
+        <div className="bottom-bar">
             <p>&copy; 2023 Shop Easy . All rights reserved</p>
         </div>
         </footer>

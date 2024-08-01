@@ -66,7 +66,7 @@ const Cart = ({cart,setCart,AddItemPrice,show,flag,setShow}) => {
                         <img src={item.img} className='cart-img' />
                        
                     </div>
-                    {/* <div className='cart-content'> */}
+                    {/* <div classNameName='cart-content'> */}
                     <div className="item-car-title">
                     <p>{item.title}</p>
                     </div>

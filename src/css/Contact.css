@@ -8,8 +8,10 @@
     display: flex;
     flex-wrap: wrap;
     gap:500px;
+    justify-content: center;
+    align-items: center;
     /* flex-direction: column; */
-    margin-left: 20px;
+    margin-left: 1px;
     
     overflow-x: hidden;
 
@@ -67,14 +69,16 @@
     margin-top: 30px; 
 }
 .contact-left{
-    margin-top:60px;
-    margin-left: 130px;
+    margin-top:60px; 
+   
+    /* margin-left: 130px; */
 }
 .send-us{
     margin-top: 50px;
 }
 .email-contact{
     margin-top: 60px;
+   
 }
 .textarea-contact{
     margin-top: 80px;
@@ -92,9 +96,23 @@
     width:100px;
     height: 200px;
 }
+.name-contact{
+    width:400px;
+}
+#standard-basic{
+    width:380px;
+} 
+.user-name{
+    color:#219ebc;
+    font-size: 18px;
+}
+.logout{
+    color:#edede9;
+}
 
 
 /* media queries */
+
 @media screen and (max-width:991px)
     {
         
@@ -102,6 +120,8 @@
         .contact-container{
             display: flex;
            flex-direction: column;
+          
+           
          
            justify-content: center;
            align-items: center;
@@ -112,9 +132,43 @@
             margin-left: -182px;
         }
         .contact-right{
-            margin-left:120px;
+            margin-left:30px;
             margin-top: -500px;
         }
+        
+        
+    } 
+    #standard-basic{
+        width:280px;
+    } 
+    #w3review{
+        width:280px;
+    }
+    @media screen and (max-width:1186px)
+    {
+        
+        
+        .contact-container{
+            display: flex;
+           flex-direction: column;
+           width:100%;
+           
+           
+         
+           justify-content: center;
+           align-items: center;
+
+        }
+        .contact-left{
+            text-align: center;
+            margin-left: -200px;
+        }
+        /* .contact-right{
+            margin-left:30px;
+            margin-bottom: -100px;
+        } */
+      
+       
         
         
     }

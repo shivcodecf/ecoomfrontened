@@ -19,14 +19,16 @@ const Home = () => {
   return (
     <>
     <div className='home-container'>
-    <div class='Home-text-container'>
-      <h1 class='logo-name'>SHOP EASY</h1>
-      <p class='home-text'>Welcome to <span class='cartify-text'>Shop Easy</span></p>
-      <p className='home-discription'>An E-Commerce Website where you can</p><p className='home-discription'>
-buy all yours Favourite Shirts and</p><p className='home-discription'>
-Jackets at the lowest Price.</p>
+    <div className='Home-text-container'>
+      <h1 className='logo-name'>SHOP EASY</h1>
+      <p className='home-text'>Welcome to <span className='cartify-text'>Shop Easy</span></p>
+      <div className="flex flex-col items-start">
+  <p className='home-discription '>An E-Commerce Website where you can</p>
+  <p className='home-discription'>buy all your Favorite Shirts and</p>
+  <p className='home-discription'>Jackets at the lowest Price.</p>
+</div>
 {/* <a href="http://localhost:3001/Product">
-<button className='sign-up '>SHOP NOW</button>
+<button classNameName='sign-up '>SHOP NOW</button>
 </a> */}
 <NavLink to = "/Product" className="nav_"><button className='sign-up '>SHOP NOW</button></NavLink>
 
@@ -77,9 +79,9 @@ Jackets at the lowest Price.</p>
             </div>
         </div>        
     </div>
-    {/* <div className="deal-container"> */}
+    {/* <div classNameName="deal-container"> */}
     <div className="deal-container">
-    <p class='trending-name'>Features products</p>
+    <p className='trending-name'>Features products</p>
     <div className="Deals">
    
 

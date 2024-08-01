@@ -1,5 +1,7 @@
 .logo-name{
     color:#6085ef;
+    font-size:40px;
+    font-weight:100px;
     /* margin-left:63px; */
 }
 .Home-text-container{
@@ -15,7 +17,7 @@
     font-size:40px;
     color:#0d1b2a;
     font-weight: 50px;
-    margin-top:-8px;
+    margin-top:8px;
     
 }
 .home-container{
@@ -28,8 +30,11 @@
 .home-discription{
     color:#8d99ae;
     font-size: 18px;
-    margin-top: -12px;
+    margin-top: 15px;
+   
+  
 }
+
 .sign-up{
     border-radius: 20px;
     border: 1px solid #3498db; 
@@ -37,6 +42,7 @@
     height: 50px; 
     width: 200px; 
     font-size: 20px;
+    margin-top:20px;
 } 
 .back{ 
   margin-top:50px;
@@ -99,11 +105,7 @@
     font-size: 35px;
     font-weight: 500;
 }
-/* .deal-cards{
-    width:100px;
-    height:300px;
-    box-shadow: 4px 4px 6px rgba(0,0,0,.2);  
-} */
+
 
 
 .deal-cards {
@@ -258,16 +260,19 @@
         margin-right: 10px;
       }
     .bottom-bar{
-        background: #ffc8dd;
+        background: #cdb4db;
         text-align: center;
         padding: 10px 0;
-        margin-top: 50px;
+        margin-top: -1px;
     }
     .bottom-bar p{
-        color: #343434;
+        color: black;
         margin: 0;
         font-size: 16px;
         padding: 7px;
+    }
+    .footer-content1 p{
+      color:black;
     }
 
     /* media queries */
@@ -300,6 +305,10 @@
           flex-direction: column;
           text-align: center;
           margin-left: -5px;
+        } 
+        .home-discription{
+          margin-left:3px;
+          width:100%;
         }
         
       
@@ -309,7 +318,7 @@
         }
         .home-logo img{
             width:100%;
-            margin-left: -40px;;
+            margin-left: 5px;;
            
            
            
@@ -343,13 +352,16 @@
             text-align: center;
             justify-content: center;
             margin:20px;
+            
           }
         
           .footer-content {
             width: 100%;
             float: none;
             margin-bottom: 20px;
-            margin-left:20px;
+            text-align: center;
+            /* margin-left:20px; */
+            margin-left:80px;
         }
         .list{
           margin-right:200px;
@@ -357,9 +369,19 @@
         .social-icons {
          display:flex;
          margin-right: 155px;
-        }
-        .footer-content1{
-          margin-left: 100px;
+        } 
+
+
+          .footer-content1{
+          margin-left: -50px; 
+          
+        }  
+        .footer-content1 p{
+         color:#0d1b2a;
+          
+        }  
+        .footer-content h3{
+          margin-left:-180px;
         }
        
         

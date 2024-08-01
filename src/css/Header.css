@@ -9,7 +9,8 @@ header {
       overflow-x: hidden;
       height:auto;
       overflow-y: hidden;
-      overflow-x: hidden;
+      margin-left:1px;
+    
      
    /* position: relative; */
   
@@ -48,6 +49,8 @@ header {
    }
   nav { 
     overflow: hidden;
+    margin-left:29px;
+    
     
   }
   ul {
@@ -55,10 +58,11 @@ header {
     margin: 0;
     padding: 0;
     float: right;
+   
   }
   nav li {
     display: inline-block;
-    margin-left: 25px;
+    margin-right: 25px;
     height: 70px;
     line-height: 70px;
     transition: .5s linear;
@@ -94,7 +98,8 @@ header {
   .nav_:hover{
    color: #3e2093;
    font-weight: 400;
-  }
+  } 
+  
   
    /* @media screen and (max-width: 690px) {
     
@@ -237,7 +242,11 @@ header {
           
           
         }
-
+        .logout
+        {
+          display: block;
+          margin-right: 15px;
+        }
         
         
         

@@ -16,7 +16,7 @@ import jacket9 from "../../images/jacket9.png"
 import jacket10 from "../../images/jacket10.png"
 
 
-const list=[
+ const list=[
     {
         id: "1",
         title: "Roadster",

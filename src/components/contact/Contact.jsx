@@ -12,8 +12,15 @@ import TextField from '@mui/material/TextField';
 
 
 import '../../css/Contact.css'
+import { useAuth0 } from '@auth0/auth0-react';
 
-const Contact = () => {
+const Contact = () => {  
+
+  const{ isAuthenticated,user }=useAuth0();
+
+  
+
+
   return (
     <> 
      <p className='contact-heading'></p>
@@ -41,7 +48,7 @@ const Contact = () => {
     </div>
    
     </div>
-    {/* <div className="divider-contact">
+    {/* <div classNameName="divider-contact">
     <Divider orientation='vertical' style={{marginLeft:"-100px"}}/>
     </div>
      */}
@@ -55,7 +62,8 @@ const Contact = () => {
         <TextField id="standard-basic"  
         type="username"
         name="username"
-        autoComplete='off'
+        autoComplete='off' 
+        value= {isAuthenticated ? user.name : ""}
         required
         variant="standard" placeholder='Enter your Name' />
         </div>
@@ -63,7 +71,8 @@ const Contact = () => {
        <div className="email-contact">
        < TextField id="standard-basic" 
        type="email"
-       name="email"
+       name="email" 
+       value= {isAuthenticated ? user.email : ""}
        autoComplete='off'
        required
        
@@ -81,14 +90,14 @@ const Contact = () => {
 
 </div>
 <div className="button-contact">
-   <button type="submit" class="button"><span>Send</span></button>
+   <button type="submit" className="button"><span>Send</span></button>
    </div>
    </form>
         </div>
       
         
     </div>
-    {/* <div className="contact-image">
+    {/* <div classNameName="contact-image">
     <img src={contact} alt='image'/>
     </div> */}
     </div>

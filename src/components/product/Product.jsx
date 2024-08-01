@@ -83,7 +83,22 @@ const Product = () => {
 
 
 
-      const [isFixed, setIsFixed] = useState(false);
+      const [isFixed, setIsFixed] = useState(false); 
+
+    //   useEffect(() => {
+    //     const fetchProducts = async () => {
+    //         try {
+    //             const response = await axios.get('http://localhost:5002/api/products', { withCredentials: true });
+    //             setProducts(response.data.products || []);
+    //         } catch (err) {
+    //             setError(err.response ? err.response.data.message : 'Error fetching products');
+    //         }
+    //     };
+
+    //     fetchProducts();
+    // }, []);
+
+
 
 useEffect(() => {
   const handleScroll = () => {
@@ -118,17 +133,22 @@ useEffect(() => {
          
        
          <div className='cart-top'>
-        <ShoppingCart   className= {`main-cart ${isFixed ? 'fixed' : ''}`}  onClick={()=>handler()}  style={{fontSize:"30px",cursor:"pointer"} }
+         <ShoppingCart 
+  className={`main-cart ${isFixed ? 'fixed' : ''} text-4xl sm:text-3xl md:text-4xl lg:text-5xl cursor-pointer`} 
+  onClick={() => handler()} 
+/>
+
+
         
        
         
         
-        />
+        
         <div className={`main-cart-count ${isFixed ? 'fixed' : ''}`}  >{itemcount}</div>
        </div>
        
        
-       {/* <div className="product-nav">
+       {/* <div classNameName="product-nav">
        <Navbar  />
        </div> */}
        <div className="best-deals-p">

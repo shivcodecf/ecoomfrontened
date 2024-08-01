@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Routers from './components/router/Router'
+import AuthProvider from "./Context/AuthProvider.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -7,8 +8,10 @@ const App = () => {
 
   
   return (
-    <>
+    <> 
+        <AuthProvider>
       <Routers />
+      </AuthProvider>
     </>
   )
 }
