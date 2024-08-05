@@ -23,7 +23,9 @@ mongoose.connect('mongodb+srv://shivamyadav2113128:A8qRgZewSEBhnS32@project2.5kt
 
 // Registration Route
 
-
+app.get('/', (req, res) => {
+  res.send('Welcome to the backend!');
+});
 // Middleware to protect routes
 app.use("/user", userRoute);
 
