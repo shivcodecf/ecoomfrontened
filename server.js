@@ -2,7 +2,7 @@ import express from "express";
 import  bcrypt from "bcryptjs";
 import jwt  from "jsonwebtoken";
 import  mongoose from "mongoose";
-import cookieParser from "cookie-parser";
+
 import cors from "cors";
 import userRoute from "./route/user.route.js";
 
@@ -11,7 +11,7 @@ import userRoute from "./route/user.route.js";
 
 const app = express();
 app.use(express.json());
-app.use(cookieParser());
+
 app.use(cors()); 
 app.use(express.static('public')); // Serving static files from 'public' directory
 
