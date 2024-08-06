@@ -2,6 +2,8 @@ import express from "express";
 import  bcrypt from "bcryptjs";
 import jwt  from "jsonwebtoken";
 import  mongoose from "mongoose";
+import path from 'path';
+
 
 import cors from "cors";
 import userRoute from "./route/user.route.js";
