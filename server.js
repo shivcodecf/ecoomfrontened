@@ -3,12 +3,15 @@ import  bcrypt from "bcryptjs";
 import jwt  from "jsonwebtoken";
 import  mongoose from "mongoose";
 import path from 'path';
+import { fileURLToPath } from 'url'; // Import these functions
+import { dirname } from 'path'; // Import dirname
 
 
 import cors from "cors";
 import userRoute from "./route/user.route.js";
 
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 
 const app = express();
