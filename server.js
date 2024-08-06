@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors()); 
-app.use(express.static('public')); // Serving static files from 'public' directory
+app.use(express.static(path.join(__dirname, 'build')));
 
 
 // MongoDB Connection
@@ -23,8 +23,8 @@ mongoose.connect('mongodb+srv://shivamyadav2113128:A8qRgZewSEBhnS32@project2.5kt
 
 // Registration Route
 
-app.get('/', (req, res) => {
-  res.send('Welcome to the backend!');
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 // Middleware to protect routes
 app.use("/user", userRoute);
